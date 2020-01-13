@@ -10,7 +10,7 @@ main {
 header {
   text-align: center;
   justify-content: space-around;
-  font-family: 'Satisfy', cursive;
+  font-family: 'Satisfy', cursive, bold;
   font-size: 70px;
   color: #F4B52B;
 }
@@ -28,22 +28,16 @@ p {
   color:#2D3A49;
 }
 
-.project {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  padding: 2%;
+.about-me {
+  padding: 1%;
   margin: 2%;
   margin-bottom: 5px;
   text-align: center;
-}
-
-#about-me {
   text-align: left;
   float:right;
 }
 
-.heroimage {
+.about-me img {
   width: 40%;
   height: auto;
   float: left;
@@ -51,15 +45,24 @@ p {
   border-radius: 50%;
 }
 
+.project {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1%;
+  margin: 2%;
+  margin-bottom: 5px;
+  text-align: center;
+}
+
 .divider {
   height: 50px;
   width: 100%;
   background-image: url("./pattern_crop.jpg");
   background-repeat: repeat;
-  /* object-fit: cover;   */
+  background-size: 300px;
 }
 
-  
   /*display: flex;
   .divider img {
   object-fit: cover;
@@ -110,25 +113,46 @@ ul {
   flex-shrink: 1;
 }
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 990px) {
   header {
     font-size: 40px;
   }
   h2, h3 {
     font-size: 30px;
-}
+  }
+  .divider {
+    height: 30px;
+  }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 660px) {
   header {
     font-size: 30px;
   }
   h2, h3 {
     font-size: 20px;
-}
-p {
-  font-family: 'Open Sans', sans-serif;
-  font-size: 14px;
+  }
+  p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+  }
+  .divider {
+    height: 20px;
+  }
 
+  @media screen and (max-width: 320px) {
+    header {
+      font-size: 20px;
+    }
+    h2, h3 {
+      font-size: 18px;
+    }
+    p {
+      font-family: 'Open Sans', sans-serif;
+      font-size: 14px;
+    }
+    .divider {
+      height: 20px;
+    }
 /* 
 teal = #4A7274
 dark blue = #2D3A49
