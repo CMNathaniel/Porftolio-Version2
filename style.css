@@ -1,0 +1,145 @@
+* {
+  box-sizing: border-box;
+}
+
+main {
+    margin: 3%;
+    color:#D6C8AA;
+}
+
+header {
+  text-align: center;
+  justify-content: space-around;
+  font-family: 'Satisfy', cursive;
+  font-size: 70px;
+  color: #F4B52B;
+}
+
+h2, h3 {
+   text-align: center;
+   font-family: 'Satisfy', cursive;
+   color:#4A7274;
+   font-size: 50px;
+}
+
+p {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
+  color:#2D3A49;
+}
+
+.project {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 2%;
+  margin: 2%;
+  margin-bottom: 5px;
+  text-align: center;
+}
+
+#about-me {
+  text-align: left;
+  float:right;
+}
+
+.heroimage {
+  width: 40%;
+  height: auto;
+  float: left;
+  margin-right: 1em;
+  border-radius: 50%;
+}
+
+.divider {
+  height: 50px;
+  width: 100%;
+  background-image: url("./pattern_crop.jpg");
+  background-repeat: repeat;
+  /* object-fit: cover;   */
+}
+
+  
+  /*display: flex;
+  .divider img {
+  object-fit: cover;
+  max-height: 100%;
+  max-width: 100%;
+  repeat: y;
+  flex: 1 1 50%;
+  flex-direction: column;
+  justify-content: flex-start;    */
+}
+
+#app-examples {
+  align-items: center;
+}
+
+.screenshots {
+  width: 70%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+a:link {
+  color: #2D3A49;
+}
+  
+a:visited {
+    color: #2D3A49;
+}
+  
+a:hover {
+    color: #2D3A49;
+}
+  
+a:active {
+    color:#2D3A49;
+  }
+  
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-grow: 1;
+  flex-shrink: 1;
+}
+
+@media screen and (max-width: 992px) {
+  header {
+    font-size: 40px;
+  }
+  h2, h3 {
+    font-size: 30px;
+}
+
+@media screen and (max-width: 600px) {
+  header {
+    font-size: 30px;
+  }
+  h2, h3 {
+    font-size: 20px;
+}
+p {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+
+/* 
+teal = #4A7274
+dark blue = #2D3A49
+black = #1A1B11
+beige = #D6C8AA
+yellow = #F4B52B 
+
+
+
+		<img src="./pattern_crop.jpg" alt="petal pattern">
+
+
+
+*/
