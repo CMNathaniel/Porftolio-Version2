@@ -9,6 +9,7 @@ header {
   font-size: 70px;
   color: #2D3A49;   
   margin: 0, 0, 0, 0;
+  border: 0, 0, 0, 0;
   text-shadow: .04em .04em 0 #F4B52B,.06em .06em 0 #F4B52B;
 }
 
@@ -37,7 +38,7 @@ p {
 .about-me {
   padding: 2%;
   margin: 2%;
-  margin-bottom: 5px;
+  margin-bottom: 2%;
   text-align: center;
   text-align: left;
   float:right;
@@ -90,6 +91,10 @@ ul {
   align-items: center;
   flex-grow: 1;
   flex-shrink: 1;
+}
+
+ul img {
+  height: 60px;
 }
 
 @media screen and (max-width: 990px) {
