@@ -7,9 +7,7 @@ header {
   justify-content: space-around;
   font-family: 'Satisfy', cursive;
   font-size: 70px;
-  color: #2D3A49;   
-  margin: 0, 0, 0, 0;
-  border: 0, 0, 0, 0;
+  color: #2D3A49;    
   text-shadow: .04em .04em 0 #F4B52B,.06em .06em 0 #F4B52B;
 }
 
@@ -27,8 +25,8 @@ p {
 }
 
 .background-image { 
-  height: 100%;   
-  margin: 0;     
+  height: 100%;    
+  margin: 0;       
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -46,7 +44,7 @@ p {
 
 #hero-image {
   height: auto;
-  width: 40%;
+  width: 50%;
   float: left;
   padding: 2%;
   margin-right: 1em;
@@ -55,7 +53,7 @@ p {
 
 #hero-image-right {
   height: auto;
-  width: 40%;
+  width: 30%;
   float: right; 
 }
 
@@ -64,9 +62,6 @@ p {
   margin: 2%;
   margin-bottom: 5px;
   text-align: center;
-}
-
-#app-examples {
   align-items: center;
 }
 
