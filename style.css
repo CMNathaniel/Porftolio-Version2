@@ -55,6 +55,9 @@ p {
   height: auto;
   width: 30%;
   float: right; 
+  padding: 2%;
+  margin-left: 1em;
+  border-radius: 60%;
 }
 
 .project {
