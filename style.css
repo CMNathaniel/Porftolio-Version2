@@ -2,18 +2,14 @@
   box-sizing: border-box;
 }
 
-main {
-  margin: 3%;
-  color:#D6C8AA;
-}
-
 header {
   text-align: center;
   justify-content: space-around;
   font-family: 'Satisfy', cursive;
   font-size: 70px;
-  color: #F4B52B;
-  text-shadow: .04em .04em 0 #2D3A49,.06em .06em 0 #2D3A49;
+  color: #2D3A49;   
+  margin: 0, 0, 0, 0;
+  text-shadow: .04em .04em 0 #F4B52B,.06em .06em 0 #F4B52B;
 }
 
 h2, h3 {
@@ -29,8 +25,17 @@ p {
   color:#2D3A49;
 }
 
+.background-image { 
+  height: 100%;   
+  margin: 0;     
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("./pattern.jpg");  
+}
+
 .about-me {
-  padding: 1%;
+  padding: 2%;
   margin: 2%;
   margin-bottom: 5px;
   text-align: center;
@@ -39,8 +44,8 @@ p {
 }
 
 #hero-image {
-  width: 40%;
   height: auto;
+  width: 40%;
   float: left;
   padding: 2%;
   margin-right: 1em;
@@ -48,20 +53,9 @@ p {
 }
 
 #hero-image-right {
-  width: 40%;
   height: auto;
-  float: right;
-  padding: 2%;
-  margin-right: 1em;
-  border-radius: 60%;
-}
-
-#divider {
-  height: 50px;
-  width: 100%;
-  background-image: url("./pattern_crop.jpg");
-  background-repeat: repeat;
-  background-size: 300px;
+  width: 40%;
+  float: right; 
 }
 
 .project {
@@ -105,10 +99,8 @@ ul {
   h2, h3 {
     font-size: 30px;
   }
-  .divider {
-    height: 20px;
-  }
 }
+
 @media screen and (max-width: 660px) {
   header {
     font-size: 30px;
@@ -120,11 +112,9 @@ ul {
     font-family: 'Open Sans', sans-serif;
     font-size: 14px;
   }
-  .divider {
-    height: 10px;
-  }
 }
-  @media screen and (max-width: 320px) {
+
+@media screen and (max-width: 320px) {
     header {
       font-size: 24px;
     }
@@ -135,10 +125,7 @@ ul {
       font-family: 'Open Sans', sans-serif;
       font-size: 14px;
     }
-    .divider {
-      height: 5px;
-    }
-  }
+}
 
 
 /* 
@@ -154,4 +141,35 @@ yellow = #F4B52B
 
 <div id="divider" alt="flower petals"></div>
 
+/*  #divider {
+  height: 50px;
+  width: 100%;
+  background-image: url("./pattern_crop.jpg");
+  background-repeat: repeat;
+  background-size: 300px;
+}    
+
+.large-title {
+  height: 500px;
+  width: 100%;
+  padding: 0, 0, 0, 0;
+  margin: 0, 0, 0, 0;
+  background-image: url("./pattern.jpg");
+  background-repeat: no-repeat;
+  background-size: 500px;
+  opacity: 0.5;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;   
+}
+
+
+
 */
+
+
+
+
