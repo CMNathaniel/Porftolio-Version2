@@ -76,7 +76,7 @@ p {
   margin: 2%;
   margin-bottom: 5px;
   text-align: center;
-  align-items: center;
+  /* align-items: center; */
 }
 
 .screenshots {
@@ -106,7 +106,7 @@ ul img {
   height: 60px;
 }
 
-@media screen and (max-width: 1124px) {
+@media screen and (max-width: 1200px) {
   header {
     font-size: 40px;
   }
@@ -115,7 +115,7 @@ ul img {
   }
 }
 
-@media screen and (max-width: 676px) {
+@media screen and (max-width: 992x) {
   header {
     font-size: 30px;
   }
@@ -127,7 +127,7 @@ ul img {
   }
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 576px) {
   header {
     font-size: 24px;
     }
