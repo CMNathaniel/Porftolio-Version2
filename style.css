@@ -14,6 +14,8 @@ header {
   font-size: 70px;
   color: #2D3A49;    
   text-shadow: .04em .04em 0 #F4B52B,.06em .06em 0 #F4B52B;
+  position: relative;
+  z-index: 3;
 }
 
 h2, h3 {
@@ -26,7 +28,7 @@ h2, h3 {
 p {
   font-family: 'Open Sans', sans-serif;
   font-size: 18px;
-  color:#2D3A49;
+  color:#1A242F;
 }
 
 .heading {
@@ -34,14 +36,25 @@ p {
   padding: 50px;
 }
 
-.background-image {   
-  margin: 0;   
+.background-image {
+  position: relative;
+  margin: 0;
   width: 100%;
-  height: auto; 
+  height: auto;
+}
+
+.background-image::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("./images/pattern_700px.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-image: url("./images/pattern_700px.jpg");  
+  opacity: 0.3; /* Adjust this to change the transparency */
 }
 
 .about-me {
@@ -87,7 +100,7 @@ p {
 }
 
 a:link, a:visited, a:hover, a:active {
-  color: #2D3A49;
+  color: #1A242F;
 }
 
 ul {
@@ -115,15 +128,27 @@ ul img {
   }
 }
 
-@media screen and (max-width: 992x) {
+@media screen and (max-width: 992px) {
   header {
     font-size: 30px;
   }
   h2, h3 {
-    font-size: 20px;
+    font-size: 25px;
   }
   p {
-    font-size: 15px;
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  header {
+    font-size: 26px;
+    }
+  h2, h3 {
+    font-size: 22px;
+  }
+  p {
+    font-size: 16px;
   }
 }
 
@@ -135,6 +160,6 @@ ul img {
     font-size: 20px;
   }
   p {
-    font-size: 14px;
+    font-size: 16px;
   }
 }
