@@ -72,14 +72,14 @@ p {
   background-color: pink;
 }
 
-#hero-image {
+#page-divider {
   height: auto;
   width: 20%;
   float: left;
   border-radius: 60%;
 }
 
-#hero-image-right {
+#hero-image {
   height: auto;
   width: 30%;
   float: right; 
