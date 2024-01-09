@@ -2,6 +2,9 @@
   box-sizing: border-box;
 }
 body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
   margin: 0;
 }
 
@@ -11,11 +14,25 @@ header {
   padding: 10%
   justify-content: space-around;
   font-family: 'Satisfy', cursive;
+  color: #4A7274;
   font-size: 70px;
   color: #2D3A49;    
-  text-shadow: .04em .04em 0 #F4B52B,.06em .06em 0 #F4B52B;
   position: relative;
   z-index: 3;
+}
+
+nav {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+nav a {
+  text-decoration: none; 
+  padding: 1%;
+  padding-top: 300px;
+  margin-right: 20px; /* Add this line */
+  margin-left: 20px; /* Add this line */ 
 }
 
 h2, h3 {
@@ -23,6 +40,27 @@ h2, h3 {
   font-family: 'Satisfy', cursive;
   color:#4A7274;
   font-size: 50px;
+}
+
+footer {
+  position: relative;
+  padding: 2%;
+}
+
+footer::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("./images/pattern_700px.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: auto;
+  opacity: 0.3; /* control opacity here */
+  z-index: -1; /* ensure the image is behind the content */
 }
 
 p {
@@ -50,11 +88,11 @@ p {
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url("./images/pattern_700px.jpg");
+  background-image: url("./images/lotus.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  opacity: 0.3; 
+  opacity: 0.2; 
 }
 
 .about-me {
@@ -66,17 +104,10 @@ p {
 }
 
 .image-divider {
+  position: relative;
+  margin: 0;
   width: 100%;
-  display: flex;
-  justify-content: center;
-  background-color: pink;
-}
-
-#page-divider {
   height: auto;
-  width: 20%;
-  float: left;
-  border-radius: 60%;
 }
 
 #hero-image {
@@ -123,6 +154,8 @@ ul {
 ul img {
   height: 60px;
 }
+
+
 
 @media screen and (max-width: 1200px) {
   header {
